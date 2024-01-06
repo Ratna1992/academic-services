@@ -15,7 +15,7 @@ public class AcademicsServiceImpl implements  AcademicsService{
         try{
             academicsResponse.setStatus("200");
             Map<String,String> data = new HashMap<>();
-            data.put("institute","abc");
+            data.put("institute","Swarnandhara");
             academicsResponse.setData(data);
         }
         catch (Exception e){
