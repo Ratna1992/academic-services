@@ -1,12 +1,15 @@
 package com.academics.entity;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.sql.Timestamp;
 
 @Getter
 @Setter
@@ -43,5 +46,5 @@ public class Student implements Serializable {
     @Column
     private Date doj;
     @Column(name = "last_login_date")
-    private Date lastLoginDate;
+    private Timestamp lastLoginDate;
 }

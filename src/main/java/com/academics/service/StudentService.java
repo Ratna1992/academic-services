@@ -6,13 +6,13 @@ import java.util.List;
 
 public interface StudentService {
 
-    boolean createStudents(List<Student> list);
+    List<Student> createStudents(List<Student> list);
 
     boolean deleteStudents(List<Student> list);
 
-    boolean updateStudents(List<Student> list);
+    void updateStudent(Student student);
 
-    List<Student> retriveStudents();
+    List<Student> retrieveStudents();
 
     Student retrieveStudent(Long id);
 }
