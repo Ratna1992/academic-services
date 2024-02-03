@@ -79,4 +79,10 @@ public class StudentServiceImpl implements StudentService {
         Student student = repository.findById(id).get();
         return student.getStatus().equalsIgnoreCase("Active") ? student : null;
     }
+
+    @Override
+    public List<Student> uploadStudentsFile(List<Student> list) {
+        List<Student> students = repository.saveAll(list);
+        return students;
+    }
 }

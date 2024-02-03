@@ -15,4 +15,6 @@ public interface StudentService {
     List<Student> retrieveStudents();
 
     Student retrieveStudent(Long id);
+
+    List<Student> uploadStudentsFile(List<Student> list);
 }
